@@ -1,0 +1,56 @@
+!Xft.dpi: 96
+!Xft.antialias: true
+!Xft.hinting: true
+!Xft.rgba: rgb
+!Xft.autohint: false
+!Xft.hintstyle: hintslight
+!Xft.lcdfilter: lcddefault
+
+! urxvt config
+
+URxvt.depth: 32
+URxvt.background: [90]#000000
+URxvt.foreground: #ffffff
+URxvt.scrollBar: false
+URxvt.savelines: 6400
+Urxvt.blink: true
+Urxvt.internalBorder: 0
+URxvt.font: xft:DejaVu Sans Mono:Book:size=10
+URxvt.letterSpace: 0
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/chromium
+URxvt.matcher.button: 1
+URxvt.geometry: 80x20
+
+! Color definition
+! black
+URxvt*color15  : #66666a
+URxvt*color7  : #30303a
+
+! red
+URxvt*color9: #ff6699
+URxvt*color1: #a3506c
+
+! yellow/orange
+URxvt*color11: #ffff00
+URxvt*color3: #ff9933
+
+! purple
+URxvt*color13: #cc3399
+URxvt*color5: #cc0099
+
+! blue
+URxvt*color12: #3399ff
+URxvt*color4: #0066ff
+
+! green
+URxvt*color10 : #99FF33
+URxvt*color2  : #6BB224
+
+! cyan
+URxvt*color14 : #33ccff
+URxvt*color6  : #0099ff
+
+! white
+URxvt*color0 : #b1b8c3
+URxvt*color8  : #cdcdcd
