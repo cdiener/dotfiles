@@ -7,19 +7,19 @@
 !Xft.lcdfilter: lcddefault
 
 ! urxvt config
-
+URxvt.iconFile: /usr/share/icons/Tango/32x32/apps/gnome-terminal.png
+URxvt.perl-ext-common: default
+URxvt.url-launcher: /usr/bin/chromium
+!URxvt.matcher.button: 1
 URxvt.depth: 32
-URxvt.background: [90]#000000
+URxvt.background: [70]#000000
 URxvt.foreground: #ffffff
 URxvt.scrollBar: false
 URxvt.savelines: 6400
-Urxvt.blink: true
-Urxvt.internalBorder: 0
-URxvt.font: xft:DejaVu Sans Mono:Book:size=10
+URxvt.cursorBlink: 1 
+URxvt.internalBorder: 0
+URxvt.font: xft:DejaVu Sans Mono:size=9.5
 URxvt.letterSpace: 0
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/chromium
-URxvt.matcher.button: 1
 URxvt.geometry: 80x20
 
 ! Color definition
