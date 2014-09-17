@@ -20,7 +20,7 @@ URxvt.cursorBlink: 1
 URxvt.internalBorder: 0
 URxvt.font: xft:DejaVu Sans Mono:size=9.5
 URxvt.letterSpace: 0
-URxvt.geometry: 80x20
+URxvt.geometry: 96x32
 
 ! Color definition
 ! Molokai

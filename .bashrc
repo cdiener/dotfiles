@@ -19,6 +19,7 @@ shopt -s nocaseglob
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
+export EDITOR=vim
 
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
@@ -51,6 +52,17 @@ ex ()
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+# devmux - start a developer tmux session (several windows)
+# usage: devmux
+devmux ()
+{
+	tmux new-window -n 'scribble'
+	tmux new-window -n 'scripting'
+	tmux new-window -n 'help'
+	tmux split-window -p 20 'htop'
+	tmux last-pane
 }
 
 # prompt

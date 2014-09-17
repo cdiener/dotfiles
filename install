@@ -1,0 +1,32 @@
+#!/bin/bash
+
+if [ $# -eq 2 ]; then 
+
+	cur_dir=`pwd`
+
+	cmd="ln -s --backup=t"
+	nice_cmd="link"
+
+	if [ $2 == "c" ]; then
+		cmd="cp --backup=t"
+		nice_cmd="copy"
+	fi
+
+	while read in dest; do
+		file=$(basename $in)
+
+		if [[ -d ${HOME}/$dest/ && -e $cur_dir/$in ]]; then
+			cd ${HOME}/$dest/
+			$cmd $cur_dir/$in $file
+			echo "Set up ${HOME}/$dest/$file with a $nice_cmd."
+		else
+			echo "Input file $cur_dir/$in or destination directory $dest do not exist!"
+		fi
+	done <"$1"
+else
+	echo "Links or copies dotfiles to your home directory."
+	echo "Usage:"
+	echo "test.sh installer_file cmd"
+	echo "	installer_file: the config file used"
+	echo "	cmd: either l for linking (default)  or c for copying"
+fi
