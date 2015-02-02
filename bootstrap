@@ -1,0 +1,10 @@
+#/usr/bin/env bash
+
+./install complete_link.txt l
+./install complete_copy.txt c
+
+sudo cp -r themes/gtk/* /usr/share/themes
+sudo cp -r themes/openbox/* /usr/share/themes
+sudo cp -r themes/slim/* /usr/share/slim/themes
+
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
