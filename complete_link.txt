@@ -1,7 +1,7 @@
-.bashrc ~
-.gmrunrc ~
-.vimrc ~
-.Xresources ~
-.conkyrc ~
-scripts/ghosts.sh ~/bin
+.bashrc .
+.gmrunrc .
+.vimrc .
+.Xresources .
+.conkyrc .
+scripts/ghosts.sh bin
  

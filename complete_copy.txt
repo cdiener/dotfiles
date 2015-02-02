@@ -1,4 +1,4 @@
-.gitconfig ~
-tint2rc ~/.config/tint2
-openbox/rc.xml ~/.config/openbox
-openbox/autostart ~/.config/openbox 
+.gitconfig .
+tint2rc .config/tint2
+openbox/rc.xml .config/openbox
+openbox/autostart .config/openbox 
