@@ -1,7 +1,6 @@
 .bashrc .
-.gmrunrc .
 .vimrc .
 .Xresources .
-.conkyrc .
+compton.conf .config
 scripts/ghosts.sh bin
  
