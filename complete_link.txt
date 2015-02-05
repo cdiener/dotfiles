@@ -2,5 +2,4 @@
 .vimrc .
 .Xresources .
 compton.conf .config
-scripts/ghosts.sh bin
- 
+scripts/ghosts.sh bin 
