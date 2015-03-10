@@ -61,7 +61,7 @@ devmux ()
 	tmux new-window -n 'scribble'
 	tmux new-window -n 'scripting'
 	tmux new-window -n 'help'
-	tmux split-window -p 20 'htop'
+	tmux split-window -l 8 'htop'
 	tmux last-pane
 }
 
