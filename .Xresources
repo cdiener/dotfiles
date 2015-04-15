@@ -17,9 +17,9 @@ URxvt.foreground: #ffffff
 URxvt.scrollBar: false
 URxvt.savelines: 6400
 URxvt.cursorBlink: 1 
-URxvt.internalBorder: 0
-URxvt.font: xft:DejaVu Sans Mono:size=9.5
-URxvt.letterSpace: 0
+URxvt.internalBorder: 3
+URxvt.font: xft:Droid Sans Mono:size=10
+URxvt.letterSpace: -1
 URxvt.geometry: 96x32
 
 ! Color definition
