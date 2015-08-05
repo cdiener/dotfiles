@@ -8,7 +8,7 @@
 # ID 1
 rounded = 0
 border_width = 0
-background_color = #000000 40
+background_color = #000000 0
 border_color = #FFFFFF 46
 
 # ID 2
@@ -25,21 +25,21 @@ border_color = #000000 0
 
 # ID 4
 rounded = 1
-border_width = 1
-background_color = #888888 20
+border_width = 0
+background_color = #888888 80
 border_color = #ED2323 60
 
 # ID 5
-rounded = 3
-border_width = 1
-background_color = #000000 46
-border_color = #FFFFFF 46
+rounded = 0
+border_width = 0
+background_color = #161616 80
+border_color = #FFFFFF 80
 
 # ID 6
-rounded = 3
+rounded = 0
 border_width = 1
-background_color = #474747 47
-border_color = #FFFFFF 46
+background_color = #444444 80
+border_color = #FFFFFF 80
 
 # ID 7
 rounded = 3
@@ -58,7 +58,7 @@ panel_monitor = all
 panel_position = top center horizontal
 panel_size = 100% 23
 panel_margin = 0 0
-panel_padding = 2 1 3
+panel_padding = 0 0 0
 panel_dock = 0
 wm_menu = 1
 panel_layer = bottom
@@ -73,7 +73,7 @@ strut_policy = follow_size
 
 # Taskbar
 taskbar_mode = multi_desktop
-taskbar_padding = 2 0 2
+taskbar_padding = 8 0 2
 taskbar_background_id = 5
 taskbar_active_background_id = 6
 
@@ -83,14 +83,14 @@ task_icon = 1
 task_text = 0
 task_centered = 1
 task_maximum_size = 22 22
-task_padding = 2 2
+task_padding = 6 2
 task_background_id = 3
-task_active_background_id = 2
-task_urgent_background_id = 4
+task_active_background_id = 3
+task_urgent_background_id = 2
 task_iconified_background_id = 3
 
 # Task Icons
-task_icon_asb = 60 0 0
+task_icon_asb = 60 -40 0
 task_active_icon_asb = 100 0 0
 task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 80 0 0
