@@ -6,5 +6,7 @@
 sudo cp -r themes/gtk/* /usr/share/themes
 sudo cp -r themes/openbox/* /usr/share/themes
 sudo cp -r themes/slim/* /usr/share/slim/themes
+sudo cp -r themes/cursor/* /usr/share/icons
+sudo cp -r themes/icons/* /usr/share/icons
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
