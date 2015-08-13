@@ -1,8 +1,8 @@
 ShowDotFiles = 1
 TabTimeout = 0
 
-Top = 500
-Left = 760
+Top = 40
+Left = 40
 Width = 400
 
 Terminal = terminator

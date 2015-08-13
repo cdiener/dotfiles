@@ -50,17 +50,17 @@ Uptime:${goto 55}$uptime ${goto 165} \
 CPU: ${cpu cpu0}%${goto 345} \
 RAM: ${mem}/${memmax} ${goto 495} \
 Battery ${goto 605} \
-IP: ${if_up wlp8s0}${addr wlp8s0}${else}${if_up enp7s0}${addr enp7s0}${else}none${endif}${endif} ${goto 730} \
+IP: ${if_up wlan0}${addr wlan0}${else}${if_up eth0}${addr eth0}${else}none${endif}${endif} ${goto 730} \
 ${top name 1}${goto 820}${top cpu 1}%${goto 880}${top mem_res 1}${goto 940}${top time 1}
 Kernel:${goto 55}$kernel ${goto 345} \
 ${if_match $memperc >= 80}${color1}$else${if_match $memperc >= 50}${color2}$else${color3}$endif$endif${membar 7,130}$color ${goto 495} \
 ${if_match ${battery_percent BAT0} <= 10}${color1}$else${if_match 
 ${battery_percent BAT0} <= 50}$color2$else$color3$endif$endif${battery BAT0}$color ${goto 605} \
-${color3}D:  ${if_up wlp8s0}${downspeed wlp8s0}${else}${if_up enp7s0}${downspeed enp7s0}${else}N/A${endif}${endif}$color ${goto 730} \
+${color3}D:  ${if_up wlan0}${downspeed wlan0}${else}${if_up eth0}${downspeed eth0}${else}N/A${endif}${endif}$color ${goto 730} \
 ${top name 2}${goto 820}${top cpu 2}%${goto 880}${top mem_res 2}${goto 940}${top time 2}
 Home:${goto 55}${fs_used /home}/${fs_size /home}${goto 165} \
-${voffset -15}${cpugraph cpu0 20,170 color3 color1 100 -t} ${goto 345} \
+${voffset -15}${cpugraph cpu0 20,170 0000CC 990000 100 -t} ${goto 345} \
 ${voffset 15}Swap: ${swap}/${swapmax} ${goto 495} \
 ${battery_time BAT0} ${goto 605} \
-${color1}U:  ${if_up wlp8s0}${upspeed wlp8s0}${else}${if_up enp7s0}${upspeed enp7s0}${else}N/A${endif}${endif}$color ${goto 730} \
+${color1}U:  ${if_up wlan0}${upspeed wlan0}${else}${if_up eth0}${upspeed eth0}${else}N/A${endif}${endif}$color ${goto 730} \
 ${top name 3}${goto 820}${top cpu 3}%${goto 880}${top mem_res 3}${goto 940}${voffset -20}${top time 3}
