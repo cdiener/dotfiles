@@ -1,7 +1,3 @@
-if [ -f /etc/bash_completion ]; then
-	    . /etc/bash_completion
-fi
-
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
@@ -97,11 +93,6 @@ if [[ $'\n'${match_lhs} == *$'\n'"TERM "${safe_term}* ]] ; then
 
 	alias dir="dir --color=auto"
 	alias dmesg='dmesg --color'
-
-	# Uncomment the "Color" line in /etc/pacman.conf instead of uncommenting the following line...!
-
-	# alias pacman="pacman --color=auto"
-
 else
 
 	# show root@ when we do not have colors

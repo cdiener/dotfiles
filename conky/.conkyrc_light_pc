@@ -49,14 +49,14 @@ ${voffset -7}${hr 1}
 Uptime:${goto 55}$uptime ${goto 165} \
 CPU: ${cpu cpu0}%${goto 470} \
 RAM: ${mem}/${memmax} ${goto 615} \
-IP: ${if_up wlp4s0}${addr wlp4s0}${else}${if_up enp3s0}${addr enp3s0}${else}none${endif}${endif} ${goto 730} \
+IP: ${if_up wlan0}${addr wlan0}${else}${if_up eth0}${addr eth0}${else}none${endif}${endif} ${goto 730} \
 ${top name 1}${goto 840}${top cpu 1}%${goto 900}${top mem_res 1}${goto 960}${top time 1}
 Kernel:${goto 55}${execi 3600 uname -r | sed -r "s/-\w+$//" }${goto 470} \
 ${if_match $memperc >= 80}${color3}$else${if_match $memperc >= 50}${color2}$else${color1}$endif$endif${membar 7,130}$color ${goto 615} \
-${color1}D:  ${if_up wlp4s0}${downspeed wlp4s0}${else}${if_up enp3s0}${downspeed enp3s0}${else}N/A${endif}${endif}$color ${goto 730} \
+${color1}D:  ${if_up wlan0}${downspeed wlan0}${else}${if_up eth0}${downspeed eth0}${else}N/A${endif}${endif}$color ${goto 730} \
 ${top name 2}${goto 840}${top cpu 2}%${goto 900}${top mem_res 2}${goto 960}${top time 2}
 Home:${goto 55}${fs_used /home}/${fs_size /home}${goto 165} \
-${voffset -15}${cpugraph cpu0 20,290 color1 color3 100 -t} ${goto 470} \
+${voffset -15}${cpugraph cpu0 20,290 3333ff dd0000 100 -t} ${goto 470} \
 ${voffset 15}Swap: ${swap}/${swapmax} ${goto 615} \
-${color2}U:  ${if_up wlp4s0}${upspeed wlp4s0}${else}${if_up enp3s0}${upspeed enp3s0}${else}N/A${endif}${endif}$color ${goto 730} \
+${color2}U:  ${if_up wlan0}${upspeed wlan0}${else}${if_up eth0}${upspeed eth0}${else}N/A${endif}${endif}$color ${goto 730} \
 ${top name 3}${goto 840}${top cpu 3}%${goto 900}${top mem_res 3}${goto 960}${voffset -20}${top time 3}
