@@ -9,7 +9,7 @@
 ## the system is idle, such as screen blanking (10 mins) or
 ## suspending (1 hour).
 
-xset -dpms; xset s off &
+xset -dpms; xset s off; xset -b &
 
 ## Basic compositing effects
 compton &
