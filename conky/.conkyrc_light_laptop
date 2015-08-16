@@ -47,7 +47,7 @@ System ($nodename) ${goto 730} Processes ($threads total)
 ${voffset -7}${hr 1}
 #Order: Host | CPU | mem | battery | network | processes
 Uptime:${goto 55}$uptime ${goto 165} \
-CPU: ${cpu cpu0}%${goto 345} \
+CPU: ${cpu cpu0}%${goto 285}$freq_g GHz${goto 345} \
 RAM: ${mem}/${memmax} ${goto 495} \
 Battery ${goto 605} \
 IP: ${if_up wlan0}${addr wlan0}${else}${if_up eth0}${addr eth0}${else}none${endif}${endif} ${goto 730} \
