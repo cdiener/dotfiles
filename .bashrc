@@ -16,6 +16,8 @@ export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
 export EDITOR=vim
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$HOME/bin:$HOME/scripts
 
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
@@ -107,6 +109,16 @@ fi
 PS2="> "
 PS3="> "
 PS4="+ "
+
+# enable bash completion in interactive shells
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
 
 # Try to keep environment pollution down, EPA loves us.
 unset safe_term match_lhs

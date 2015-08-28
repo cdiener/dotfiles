@@ -17,7 +17,7 @@ URxvt.foreground: #ffffff
 URxvt.scrollBar: false
 URxvt.savelines: 6400
 URxvt.cursorBlink: 1 
-URxvt.internalBorder: 3
+URxvt.internalBorder: 8
 URxvt.visualBell: true
 URxvt.font: xft:Droid Sans Mono:size=10
 !URxvt.letterSpace: -1
