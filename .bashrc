@@ -17,7 +17,7 @@ export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
 export EDITOR=vim
 export GOPATH=$HOME/code/go
-export PATH=$PATH:$HOME/bin:$HOME/scripts
+export PATH=$PATH:$GOPATH/bin
 
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
